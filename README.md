@@ -1,6 +1,6 @@
 # grid-honeycombs
 
-Все переменные в файле _variables.sass:
+Все переменные в файле _variables.sass
 ------------
 **$breakpoints**: (sm: 500px, md: 768px, lg: 1024px) !default - брейкпоинты медиа-запросов (sm, md, lg)
 **$media-direction**: 'min' !default - направление медиа-запросов ('min', 'max')
