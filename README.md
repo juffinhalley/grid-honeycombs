@@ -2,9 +2,9 @@
 
 Все переменные в файле _variables.sass
 ------------
-**$breakpoints**: (sm: 500px, md: 768px, lg: 1024px) !default - брейкпоинты медиа-запросов (sm, md, lg)
-**$media-direction**: 'min' !default - направление медиа-запросов ('min', 'max')
-**$max-columns**: 12 !default - максимальное количество колонок для генерации
+- **$breakpoints**: (sm: 500px, md: 768px, lg: 1024px) !default - брейкпоинты медиа-запросов (sm, md, lg)
+- **$media-direction**: 'min' !default - направление медиа-запросов ('min', 'max')
+- **$max-columns**: 12 !default - максимальное количество колонок для генерации
 
 ## grid-templates
 **.ghp-MEDIA-COLUMN** - инициализация грид-контейнера
