@@ -2,8 +2,8 @@
 ## Пример использования:
 ```html
 <div className="ghp ghp_4 ghp_md-12 _align-center-md">
-	<div className="ghc ghc_2 ghc_md-12">1</div>
-	<div className="ghc ghc_2 ghc_md-12">2</div>
+  <div className="ghc ghc_2 ghc_md-12">1</div>
+  <div className="ghc ghc_2 ghc_md-12">2</div>
 </div>
 ```
 Все переменные в файле _variables.sass
