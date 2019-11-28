@@ -1,5 +1,8 @@
 // Template
 @mixin grid-template
+  @for $column from 1 through $max-columns
+    &_#{$column}
+      grid-template-columns: repeat($column, 1fr)
   @each $breakpoint, $value in $breakpoints
     @for $column from 1 through $max-columns
       &_#{$breakpoint}-#{$column}
@@ -7,18 +10,30 @@
           grid-template-columns: repeat($column, 1fr)
 
 @mixin grid-template-helpers
-  @each $name, $breakpoint in $breakpoints
-    &_align-center-#{name}
+  @each $breakpoint, $value in $breakpoints
+    &._align-center-#{$breakpoint}
       @include media($breakpoint)
         align-items: center
-    &_align-stretch-#{name}
+    &._align-stretch-#{$breakpoint}
       @include media($breakpoint)
         align-items: stretch
 
 // Cells
 @mixin grid-cell
-  @each $name, $breakpoint in $breakpoints
+  @for $column from 1 through $max-columns
+    &_#{$column}
+      grid-column: span $column
+  @each $breakpoint, $value in $breakpoints
     @for $column from 1 through $max-columns
-      &_#{$name}-#{$column}
-        @include media($name)
+      &_#{$breakpoint}-#{$column}
+        @include media($breakpoint)
           grid-column: span $column
+
+@mixin grid-cells-helpers
+  @each $breakpoint, $value in $breakpoints
+    &._align-center-#{$breakpoint}
+      @include media($breakpoint)
+        align-self: center
+    &._align-stretch-#{$breakpoint}
+      @include media($breakpoint)
+        align-self: stretch
