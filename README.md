@@ -13,7 +13,7 @@
 - **$max-columns**: 12 !default - максимальное количество колонок для генерации
 
 ## grid-templates
-**.ghp-MEDIA-COLUMN** - инициализация грид-контейнера
+**.grid-MEDIA-COLUMN** - инициализация грид-контейнера
 -   MEDIA - тип медиазапроса из $breakpoints (sm, md, lg, etc...)
 -   COLUMN - количество колонок для инициализации на данном брейкпоинте из $max-columns
 
@@ -25,7 +25,7 @@
 -   MEDIA - тип медиазапроса из $breakpoints (sm, md, lg, etc...)
 
 ## grid-cells
-**.ghc-media-COLUMN** - инициализация грид-компонента
+**.col-media-COLUMN** - инициализация грид-компонента
 -   MEDIA - тип медиазапроса из $breakpoints (sm, md, lg, etc...)
 -   COLUMN - количество колонок для заполнения грид-компонентом (максимальное значение в $max-columns)
 
