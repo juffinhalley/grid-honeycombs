@@ -1,5 +1,9 @@
 # grid-honeycombs
-
+## Пример использования:
+    <div className="ghp ghp_4 ghp_md-12 _align-center-md">
+    	<div className="ghc ghc_2 ghc_md-12">1</div>
+    	<div className="ghc ghc_2 ghc_md-12">2</div>
+    </div>
 Все переменные в файле _variables.sass
 ------------
 - **$breakpoints**: (sm: 500px, md: 768px, lg: 1024px) !default - брейкпоинты медиа-запросов (sm, md, lg)
@@ -23,3 +27,9 @@
 -   MEDIA - тип медиазапроса из $breakpoints (sm, md, lg, etc...)
 -   COLUMN - количество колонок для заполнения грид-компонентом (максимальное значение в $max-columns)
 
+## grid-cells-helpers
+**_align-center-MEDIA** - выравнивание текущего грид-компонента по центру
+-   MEDIA - тип медиазапроса из $breakpoints (sm, md, lg, etc...)
+
+**_align-stretch-MEDIA** - текущий грид-компонент растягивается таким образом, чтобы занять всё доступное пространство контейнера.
+-   MEDIA - тип медиазапроса из $breakpoints (sm, md, lg, etc...)
