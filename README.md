@@ -13,7 +13,7 @@
 - **$max-columns**: 12 !default - максимальное количество колонок для генерации
 
 ## grid-templates
-Изменение размера отступов (gaps) производится в файле `/creators/_grid.sass`  при инициализации гридов в поле   `@include grid-template(gaps)` пример:   `@include grid-template(20px)`
+Изменение размера отступов между колонками(gaps) производится в файле `/creators/_grid.sass`  при инициализации гридов в поле   `@include grid-template(gaps)` пример:   `@include grid-template(20px)`
 ------------
 **.ghp-MEDIA-COLUMN** - инициализация грид-контейнера
 -   MEDIA - тип медиазапроса из $breakpoints (sm, md, lg, etc...)
