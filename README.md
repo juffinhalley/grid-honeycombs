@@ -1,9 +1,9 @@
 # grid-honeycombs
 ## Пример использования:
 ```html
-<div className="ghp ghp_4 ghp_md-12 _align-center-md">
-  <div className="ghc ghc_2 ghc_md-12">1</div>
-  <div className="ghc ghc_2 ghc_md-12">2</div>
+<div className="grid grid_4 grid_md-12 _align-center-md">
+  <div className="col col_2 col_md-12">1</div>
+  <div className="col col_2 col_md-12">2</div>
 </div>
 ```
 Все переменные в файле _variables.sass
@@ -16,7 +16,7 @@
 Изменение размера отступов между колонками(gaps) производится в файле `/creators/_grid.sass`  при инициализации гридов в поле   `@include grid-template(gaps)` пример:   `@include grid-template(20px)`
 
 ------------
-**.ghp-MEDIA-COLUMN** - инициализация грид-контейнера
+**.grid-MEDIA-COLUMN** - инициализация грид-контейнера
 -   MEDIA - тип медиазапроса из $breakpoints (sm, md, lg, etc...)
 -   COLUMN - количество колонок для инициализации на данном брейкпоинте из $max-columns
 
@@ -28,7 +28,7 @@
 -   MEDIA - тип медиазапроса из $breakpoints (sm, md, lg, etc...)
 
 ## grid-cells
-**.ghc-media-COLUMN** - инициализация грид-компонента
+**.col-media-COLUMN** - инициализация грид-компонента
 -   MEDIA - тип медиазапроса из $breakpoints (sm, md, lg, etc...)
 -   COLUMN - количество колонок для заполнения грид-компонентом (максимальное значение в $max-columns)
 
